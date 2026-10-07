@@ -1,0 +1,43 @@
+/* Fondo gris clarito */
+body {
+  background: #f5f5f5;
+}
+
+/* Formulario como tarjeta blanca */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón naranja */
+.btn {
+  background-color: #ff9800;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #e68900;
+}
+
+/* Campos naranjas al escribir */
+.input-field input:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid #ff9800;
+  box-shadow: 0 1px 0 0 #ff9800;
+}
+
+.input-field input:focus + label,
+.input-field textarea:focus + label {
+  color: #ff9800;
+}
+
+/* Avatar y estrella naranjas */
+.collection .collection-item.avatar .circle {
+  background-color: #ff9800;
+}
+
+.secondary-content {
+  color: #ff9800;
+}

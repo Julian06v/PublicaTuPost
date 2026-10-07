@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publica tu Post</title>
+
+  <!-- Íconos -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Mis estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Título -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Publica tu Post</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">
+          Un ejemplo de maquetación utilizando el framework de Materialize
+        </h5>
+      </div>
+      <br><br>
+    </div>
+  </div>
+
+  <!-- Formulario -->
+  <div class="row">
+    <div class="container">
+      <form class="col s12" id="formPost">
+
+        <!-- Título del post -->
+        <div class="row">
+          <div class="input-field col s12 m6 offset-m3 l4 offset-l4">
+            <input id="tituloPost" type="text" class="validate" required>
+            <label for="tituloPost">Título del Post</label>
+          </div>
+        </div>
+
+        <!-- Contenido del post -->
+        <div class="row">
+          <div class="input-field col s12 m6 offset-m3 l4 offset-l4">
+            <textarea id="contenidoPost" class="materialize-textarea" required></textarea>
+            <label for="contenidoPost">Contenido del Post</label>
+          </div>
+        </div>
+
+        <!-- Botón -->
+        <div class="row">
+          <div class="col s12 m6 offset-m3 l4 offset-l4">
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+              Enviar
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- Lista de posts -->
+  <div class="container">
+    <h4 class="center orange-text">Posts publicados</h4>
+    <p class="center grey-text" id="mensaje"></p>
+
+    <!-- Aquí caen los posts de Firestore -->
+    <ul class="collection" id="listaPosts"></ul>
+  </div>
+
+  <br><br>
+
+  <!-- JS de Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Mi código -->
+  <script src="app.js"></script>
+</body>
+</html>
